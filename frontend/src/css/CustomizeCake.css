@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Changed from center to flex-start */
+  min-height: 100vh; /* Ensures the body covers the full height of the viewport */
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+.customize-cake {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  margin: 20px; /* Added margin for spacing when zoomed in */
+}
+
+.size-section {
+  margin-bottom: 20px;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.button-size {
+  background-color: #ffeb3b;
+  border: none;
+  border-radius: 10px;
+  color: #333;
+  cursor: pointer;
+  flex: 1 1 45%;
+  margin: 10px;
+  padding: 10px 20px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.button-size:hover {
+  background-color: #ffc107;
+}
+
+.button-size.selected {
+  background-color: #ffc107;
+  transform: scale(1.05);
+}
+
+.input-description {
+  margin-top: 20px;
+}
+
+.input-description-box {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  resize: none;
+  margin-bottom: 10px;
+}
+
+.file-upload {
+  margin: 10px 0;
+}
+
+.button-submit {
+  background-color: #007bff;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+.button-submit:hover {
+  background-color: #0056b3;
+}

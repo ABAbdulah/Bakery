@@ -1,0 +1,69 @@
+/* Basic styling for the entire app */
+.ContactUsApp {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+/* Center align the heading and add bottom margin */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Style the form to limit its width and center it */
+form {
+  max-width: 600px; /* Max width of the form */
+  margin: auto; /* Center the form horizontally */
+  display: grid; /* Use CSS Grid for layout */
+  grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+  gap: 20px; /* Space between the grid items */
+}
+
+/* Ensure form-group uses grid layout */
+.form-group {
+  display: contents; /* Ensure the children of form-group are positioned as grid items */
+}
+.input-container {
+  width: 100%; /* Full width to ensure it aligns properly */
+  margin-bottom: 20px; /* Space between inputs */
+  position: relative; /* Relative positioning for layout control */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+}
+/* Style for all input fields and the textarea */
+input,
+textarea {
+  width: 100%; /* Make inputs full width of the grid cell */
+  padding: 10px; /* Padding inside the input fields */
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+  /*margin-bottom: 10px;  Bottom margin for spacing */
+}
+
+/* Ensure the textarea spans across two columns */
+textarea {
+  grid-column: span 2; /* Span the textarea across both columns */
+  height: 100px; /* Set a fixed height for the textarea */
+}
+
+/* Style for error messages */
+.error {
+  color: red; /* Red text color for errors */
+  font-size: 0.8em; /* Smaller font size */
+  margin-top: 1px;
+}
+
+/* Style for the submit button */
+button {
+  grid-column: span 2; /* Span the button across both columns */
+  padding: 10px 20px; /* Padding inside the button */
+  background-color: #007bff; /* Blue background color */
+  color: white; /* White text color */
+  border: none; /* Remove border */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  text-align: center; /* Center the button text */
+}
+
+/* Change background color of the button on hover */
+button:hover {
+  background-color: #0056b3; /* Darker blue background color on hover */
+}
